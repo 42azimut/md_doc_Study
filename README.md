@@ -49,7 +49,7 @@ click [Click HERE go NAVER](www.naver.com)
 
 ## Image
 
-![image description](https://i.pinimg.com/originals/8c/cf/ec/8ccfec7d5cb3c92265cbf153523eb9b5.jpg)
+![image description]()
 <img src = "https://i.pinimg.com/originals/8c/cf/ec/8ccfec7d5cb3c92265cbf153523eb9b5.jpg" width="100px">
 ---
 
