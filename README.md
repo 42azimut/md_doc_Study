@@ -37,15 +37,24 @@ python manage.py createsuperuser
 
 
 
-
-
 나의 첫 번째 장고 프로젝트!
+
 Note 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기초로 작성되었습니다.
-Note 이 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License에 준수하여 django-marcador 튜토리얼를 기초로 작성되었습니다. django-marcador 튜토리얼 저작권은 Markus Zapke-Gründemann et al이 소유하고 있습니다.
+
+Note 이 장의 일부는 Creative Commons Attribution-ShareAlike 4.0 International License에 준수하여 django-marcador 튜토리얼를 기초로 작성되었습니다. 
+
+django-marcador 튜토리얼 저작권은 Markus Zapke-Gründemann et al이 소유하고 있습니다.
+
 아주 간단한 블로그 사이트를 만들어 볼 거예요!
+
 첫 단계는 장고 프로젝트를 시작하는 거예요. 다시 말해 장고의 기본 골격을 만들어주는 스크립트를 실행할 거예요. 이 디렉토리와 파일 묶음은 나중에 사용할 것입니다.
+
 장고에서는 디렉토리와 파일명이 매우 중요하답니다. 파일명을 마음대로 변경해서도 안되고 다른 곳으로 옮겨도 안됩니다. 장고는 중요한 것들을 찾을 수 있게 특정한 구조를 유지해야 합니다.
-모든 작업은 가상환경(virtualenv) 안에서 해야 하는 것을 꼭 기억하세요. 현재 콘솔 창에서 접두어로 (myvenv)가 안 보인다면 먼저 virtualenv를 활성화해야 합니다. Django 설치하기 장에서 virtualenv 작동법에 대해 배웠어요. 윈도우에서는 myvenv\Scripts\activate를 타이핑하고, 맥 OS과 리눅스에서는 source myvenv/bin/activate을 입력하세요.
+
+모든 작업은 가상환경(virtualenv) 안에서 해야 하는 것을 꼭 기억하세요. 현재 콘솔 창에서 접두어로 (myvenv)가 안 보인다면 먼저 virtualenv를 활성화해야 합니다. Django 설치하기 장에서 virtualenv 
+
+작동법에 대해 배웠어요. 윈도우에서는 myvenv\Scripts\activate를 타이핑하고, 맥 OS과 리눅스에서는 source myvenv/bin/activate을 입력하세요.
+
 OS X / Linux
 
 맥 OS과 리눅스 콘솔에서는 다음과 같이 명령을 실행해야해요. 명령어 끝에 .(점, 마침표)을 입력하는 것을 잊지마세요. :
