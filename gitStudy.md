@@ -10,3 +10,23 @@ git rm --cached -r 폴더명
 
 위에 작업 하고 나서 
 commit 후 push 해주면 된다..
+
+###  origin == github의 현재 리포지터리의 alias 
+### 관행적으로 origin 이라 함! 주소 쓰기 귀찮음!
+
+## git 생성(git hub 리포지터리 생성해둠)
+- `git init`
+- `git add "file"`
+- `git commit -m "message"`
+- `git branch -M main`
+- `git remote add origin github.adress` 
+- `git push -u origin main`
+
+##
+- `git pull origin main`
+
+## branch
+- `git branch branch_name`
+- `git checkout branch_name`
+
+
