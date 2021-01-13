@@ -12,9 +12,9 @@
 - `git commit`
 - `git push`  
 ### 해주면 된다.
----
+___
 
-### origin == github의 현재 리포지터리의 alias 관행적으로 origin 이라 함! 주소 쓰기 귀찮음!
+### - origin == github의 현재 리포지터리의 alias 관행적으로 origin 이라 함! 주소 쓰기 귀찮음!
 
 ## git 생성(git hub 리포지터리 생성해둠)
 - `git init`
