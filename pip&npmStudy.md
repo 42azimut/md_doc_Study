@@ -11,7 +11,7 @@ ___
 ### 명령어 자동실행 가능 사용은
 - `npm start` 아래 파일 실행됨
 - "scipts" : {
-  "start": "noe ./bin/www.js",
+  "start": "node ./bin/www.js",
 }
 ___
 
