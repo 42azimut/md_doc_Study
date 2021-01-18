@@ -19,12 +19,12 @@ CF ) 대문자 사용 : shift + caps lock
 	CREATE DATABASE opentutorials;
 
  1-1 데이터베이스 사용
-	USE opentutorials; 
+	USE opentutorials;
 1-2 참고) 디비 삭제는  >> DROP DATABASE opentutorials
 
 1-3 참고) 패스워드 변경: SET PASSWORD = PASSWORD(‘변경할 패스워드’); 
 
- 2. 테이블 컬럼 생성   
+ 2. 테이블 컬럼 생성  
   CREATE TABLE topic(
     -> id INT(11) NOT NULL AUTO_INCREMENT,
     -> title VARCHAR(100) NOT NULL,
@@ -32,8 +32,8 @@ CF ) 대문자 사용 : shift + caps lock
     -> created DATETIME NOT NULL,
     -> author VARCHAR(30) NULL,
     -> profile VARCHAR(100) NULL,
-    -> PRIMARY KEY(id));         
- 3. 데이터 입력하기 INSERT 
+    -> PRIMARY KEY(id));        
+ 3. 데이터 입력하기 INSERT
 cf) 테이블 컬럼(정보) 보기 
 
     DESC topic; 
@@ -54,26 +54,26 @@ cf) 테이블 컬럼(정보) 보기
 
 
 ********** 선택해서 데이터베이스 보기(읽기) **********
- 1. 선택한 컬럼만 보기
-SELECT id, title, created FROM topic;  2. 선택한 칼럼에서 && 특정 데이터만 있는 칼럼 찾기
+1. 선택한 컬럼만 보기
+SELECT id, title, created FROM topic;2. 선택한 칼럼에서 && 특정 데이터만 있는 칼럼 찾기
 SELECT id, title, created FROM topic WHERE author='azimut';
 +----+--------+---------------------+
 | id | title  | created             |
 +----+--------+---------------------+
 |  1 | My sql | 2020-12-29 22:50:06 |
-+----+--------+---------------------+  3. 위에 연장 >>> 아이디 기준으로 내림차순   
-SELECT id, title, created FROM topic WHERE author='azimut' ORDER BY id DESC;  4. >>> 아이디 기준 내림차순 >>> 제한 2개 
++----+--------+---------------------+3. 위에 연장 >>> 아이디 기준으로 내림차순   
+SELECT id, title, created FROM topic WHERE author='azimut' ORDER BY id DESC;4. >>> 아이디 기준 내림차순 >>> 제한 2개 
 SELECT id, title, created FROM topic WHERE author='azimut' ORDER BY id DESC LIMIT 2;
 
 
-********** 데이터 베이스 수정하기 **********  1. UPDATE topic SET description='MY SQL....bla', title='My sql' WHERE id=1;
+********** 데이터 베이스 수정하기 **********1. UPDATE topic SET description='MY SQL....bla', title='My sql' WHERE id=1;
 
 
-********** 데이터 베이스 삭제하기 **********  1. DELETE FROM topic WHERE id=6;  
->>> (WARNING : 조건 where 없이 앞에만 쓰면 모두 삭제됨!!! 인생도 삭제!) 
+********** 데이터 베이스 삭제하기 **********1. DELETE FROM topic WHERE id=6;  
+>>> (WARNING : 조건 where 없이 앞에만 쓰면 모두 삭제됨!!! 인생도 삭제!)
 
- ********** 데이터 베이스 분리하기 **********
->>>> 여기부터는 생활코딩 복붙 <<<<<< 
+********** 데이터 베이스 분리하기 **********
+>>>> 여기부터는 생활코딩 복붙 <<<<<<
 --
 -- Table structure for table `author`
 --
@@ -116,9 +116,9 @@ INSERT INTO `topic` VALUES (2,'Oracle','Oracle is ...','2018-01-03 13:01:10',1);
 INSERT INTO `topic` VALUES (3,'SQL Server','SQL Server is ...','2018-01-20 11:01:10',2);
 INSERT INTO `topic` VALUES (4,'PostgreSQL','PostgreSQL is ...','2018-01-23 01:03:03',3);
 INSERT INTO `topic` VALUES (5,'MongoDB','MongoDB is ...','2018-01-30 12:31:03',1);
- 
 
-********** 데이터 베이스 관계형 데이터 베이스 JOIN ********** 
+
+********** 데이터 베이스 관계형 데이터 베이스 JOIN **********
 SELECT * FROM topic LEFT JOIN author ON topic.author_id=author.id;
 //topic 테이블과 join 테이블을 합친다. ON 조건 만족시키는 경우
 
@@ -133,5 +133,5 @@ SELECT topic.id, title, description, created, name, profile FROM topic LEFT JOIN
 SELECT topic.id AS topic_id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id; 
 
 테이블을 분리한다는 것은, 모든 테이블이 식별자 값만 행에 포함하고 있다면 JOIN을 통해 얼마든지 관계를 맺을 수 있다.
-                        
-         
+
+        
