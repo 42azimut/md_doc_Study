@@ -23,3 +23,4 @@
 접수문의SW마에스트로 연수센터 사무국 (Tel. 02.6933.0701~0705,0710 / Email : swmaestro@fkii.org )
 
 사업문의정보통신기획평가원 「SW마에스트로과정」 담당자 (Tel. 042.612.8433 / Email : kochoi@iitp.kr )
+
