@@ -190,12 +190,47 @@ ___
 - ping domain
 
 `ping google.com`
+___
+19) nslookup
+- 도메인주소의 ip넘버(주소)를 알려줌!
 
+`nslookup`
+___
+20) ps (process state)
+- 모든 프로세스의 상태를 표시!
 
+`ps -ef`  
 
+- 필요한 프로세스만 골라서 확인할떄
 
+`ps -ef | grep a.out`
+___
+21) kill 
+- 해당 프로세스를 강제 종료!
+- -9 옵션 이다!! 
+`kill -9 process.id`   
 
+`kill -9 11134`
+___
+22) adduser
+- 계정 추가
 
+`sudo adduser guest2`
+___
+23) uname
+-  -a 옵션 디테일 정보 
+- 시스템 정보를 확인!
+
+24) hostname
+- Jaydens-MacBook-Pro.local
+
+25) reboot
+- 재부팅
+`sudo reboot`
+
+26) halt 
+- 시스템 완전히 셧다운 **주의! -p옵션 파워까지 날림!
+`sudo halt -p` 
 
 
 
