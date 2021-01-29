@@ -12,19 +12,25 @@ cd /usr/local/mysql/bin/
 
 패스워드 입력.  
 
-CF ) 대문자 사용 : shift + caps lock
+CF ) MAC OS 대문자 사용 : shift + caps lock 
 
+0. 현재 서버에 어떤 데이터베이스가 있는지 보기!
+- `SHOW DATABASES;`
 
 1. 데이터베이스 생성
-	CREATE DATABASE opentutorials;
+- `CREATE DATABASE opentutorials;`
 
  1-1 데이터베이스 사용
-	USE opentutorials;
-1-2 참고) 디비 삭제는  >> DROP DATABASE opentutorials
+- `USE opentutorials;`
 
-1-3 참고) 패스워드 변경: SET PASSWORD = PASSWORD(‘변경할 패스워드’); 
+1-2 참고) 디비 삭제
+- `DROP DATABASE opentutorials`
+
+1-3 참고) 패스워드 변경
+- `SET PASSWORD = PASSWORD(‘변경할 패스워드’);`
 
  2. 테이블 컬럼 생성  
+ ```
   CREATE TABLE topic(
     -> id INT(11) NOT NULL AUTO_INCREMENT,
     -> title VARCHAR(100) NOT NULL,
@@ -33,9 +39,13 @@ CF ) 대문자 사용 : shift + caps lock
     -> author VARCHAR(30) NULL,
     -> profile VARCHAR(100) NULL,
     -> PRIMARY KEY(id));        
- 3. 데이터 입력하기 INSERT
+ ```
+ 
+ 3. 데이터 입력하기 
+ - `INSERT`
+ 
 cf) 테이블 컬럼(정보) 보기 
-
+```
     DESC topic; 
 +-------------+--------------+------+-----+---------+----------------+
 | Field       | Type         | Null | Key | Default | Extra          |
@@ -47,14 +57,17 @@ cf) 테이블 컬럼(정보) 보기
 | author      | varchar(30)  | YES  |     | NULL    |                |
 | profile     | varchar(100) | YES  |     | NULL    |                |
 +-------------+--------------+------+-----+---------+----------------+
+```
 
- 4. INSERT INTO topic (title, description, created, author, profile) VALUES('My sql', 'My SQL now is studying & taught', NOW(), 'azimut', 'developer');
+ 4. `INSERT INTO topic (title, description, created, author, profile) VALUES('My sql', 'My SQL now is studying & taught', NOW(), 'azimut', 'developer');`
 
- 5. SELECT * FROM topic;     (입력한 데이터 보기)
+ 5. `SELECT * FROM topic;     (입력한 데이터 보기)`
 
 
 ********** 선택해서 데이터베이스 보기(읽기) **********
+
 1. 선택한 컬럼만 보기
+```
 SELECT id, title, created FROM topic;2. 선택한 칼럼에서 && 특정 데이터만 있는 칼럼 찾기
 SELECT id, title, created FROM topic WHERE author='azimut';
 +----+--------+---------------------+
@@ -64,36 +77,40 @@ SELECT id, title, created FROM topic WHERE author='azimut';
 +----+--------+---------------------+3. 위에 연장 >>> 아이디 기준으로 내림차순   
 SELECT id, title, created FROM topic WHERE author='azimut' ORDER BY id DESC;4. >>> 아이디 기준 내림차순 >>> 제한 2개 
 SELECT id, title, created FROM topic WHERE author='azimut' ORDER BY id DESC LIMIT 2;
+```
 
 
-********** 데이터 베이스 수정하기 **********1. UPDATE topic SET description='MY SQL....bla', title='My sql' WHERE id=1;
+********** 데이터 베이스 수정하기 **********
+1. `UPDATE topic SET description='MY SQL....bla', title='My sql' WHERE id=1;`
 
 
-********** 데이터 베이스 삭제하기 **********1. DELETE FROM topic WHERE id=6;  
->>> (WARNING : 조건 where 없이 앞에만 쓰면 모두 삭제됨!!! 인생도 삭제!)
+********** 데이터 베이스 삭제하기 **********
+
+`1. DELETE FROM topic WHERE id=6;`   >>> (WARNING : 조건 where 없이 앞에만 쓰면 모두 삭제됨!!! 인생도 삭제!)
 
 ********** 데이터 베이스 분리하기 **********
 >>>> 여기부터는 생활코딩 복붙 <<<<<<
---
--- Table structure for table `author`
---
+
+`Table structure for table `author``
  
- 
+``` 
 CREATE TABLE `author` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(20) NOT NULL,
   `profile` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
- 
---
--- Dumping data for table `author`
---
- 
+```
+
+
+`Dumping data for table `author``
+
+``` 
 INSERT INTO `author` VALUES (1,'egoing','developer');
 INSERT INTO `author` VALUES (2,'duru','database administrator');
 INSERT INTO `author` VALUES (3,'taeho','data scientist, developer');
- 
+```
+
 --
 -- Table structure for table `topic`
 --
