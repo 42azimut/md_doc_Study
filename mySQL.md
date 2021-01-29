@@ -21,6 +21,12 @@ FROM students
 WHERE email
 LIKE "%naver.com";
 ```
+```
+SELECT email
+FROM students
+WHERE age BETWEEN 15 AND 18
+```
+
 ___
 0. 현재 서버에 어떤 데이터베이스가 있는지 보기!
 - `SHOW DATABASES;`
