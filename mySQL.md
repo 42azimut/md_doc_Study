@@ -1,10 +1,10 @@
-My SQL  설치 및 사용
+MySQL  설치 및 사용
 
 Install 한후
 
 Terminal 로가서
 
-        - mySQL 접속 하기 아래 주소로 가서! 
+- mySQL 접속 하기 아래 주소로 가서! 
 
 cd /usr/local/mysql/bin/ 
 
@@ -13,7 +13,15 @@ cd /usr/local/mysql/bin/
 패스워드 입력.  
 
 CF ) MAC OS 대문자 사용 : shift + caps lock 
-
+___
+## 사용 예시!
+```
+SELECT age
+FROM students
+WHERE email
+LIKE "%naver.com";
+```
+___
 0. 현재 서버에 어떤 데이터베이스가 있는지 보기!
 - `SHOW DATABASES;`
 
@@ -28,7 +36,7 @@ CF ) MAC OS 대문자 사용 : shift + caps lock
 
 1-3 참고) 패스워드 변경
 - `SET PASSWORD = PASSWORD(‘변경할 패스워드’);`
-
+___
  2. 테이블 컬럼 생성  
  ```
   CREATE TABLE topic(
@@ -40,7 +48,7 @@ CF ) MAC OS 대문자 사용 : shift + caps lock
     -> profile VARCHAR(100) NULL,
     -> PRIMARY KEY(id));        
  ```
- 
+ ___
  3. 데이터 입력하기 
  - `INSERT`
  
@@ -58,13 +66,13 @@ cf) 테이블 컬럼(정보) 보기
 | profile     | varchar(100) | YES  |     | NULL    |                |
 +-------------+--------------+------+-----+---------+----------------+
 ```
-
+___
  4. `INSERT INTO topic (title, description, created, author, profile) VALUES('My sql', 'My SQL now is studying & taught', NOW(), 'azimut', 'developer');`
-
+___
  5. `SELECT * FROM topic;     (입력한 데이터 보기)`
+___
 
-
-********** 선택해서 데이터베이스 보기(읽기) **********
+##  선택해서 데이터베이스 보기(읽기)
 
 1. 선택한 컬럼만 보기
 ```
@@ -78,17 +86,17 @@ SELECT id, title, created FROM topic WHERE author='azimut';
 SELECT id, title, created FROM topic WHERE author='azimut' ORDER BY id DESC;4. >>> 아이디 기준 내림차순 >>> 제한 2개 
 SELECT id, title, created FROM topic WHERE author='azimut' ORDER BY id DESC LIMIT 2;
 ```
-
-
-********** 데이터 베이스 수정하기 **********
+---
+## 데이터 베이스 수정하기 
 1. `UPDATE topic SET description='MY SQL....bla', title='My sql' WHERE id=1;`
 
 
-********** 데이터 베이스 삭제하기 **********
+## 데이터 베이스 삭제하기 
 
-`1. DELETE FROM topic WHERE id=6;`   >>> (WARNING : 조건 where 없이 앞에만 쓰면 모두 삭제됨!!! 인생도 삭제!)
+`1. DELETE FROM topic WHERE id=6;`   # (WARNING : 조건 where 없이 앞에만 쓰면 모두 삭제됨!!! 인생도 삭제!)
 
-********** 데이터 베이스 분리하기 **********
+## 데이터 베이스 분리하기
+
 >>>> 여기부터는 생활코딩 복붙 <<<<<<
 
 `Table structure for table `author``
@@ -111,9 +119,8 @@ INSERT INTO `author` VALUES (2,'duru','database administrator');
 INSERT INTO `author` VALUES (3,'taeho','data scientist, developer');
 ```
 
---
--- Table structure for table `topic`
---
+
+## Table structure for table `topic`
  
 CREATE TABLE `topic` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -124,30 +131,29 @@ CREATE TABLE `topic` (
   PRIMARY KEY (`id`)
 );
  
---
--- Dumping data for table `topic`
---
- 
+
+## Dumping data for table `topic`
+
+``` 
 INSERT INTO `topic` VALUES (1,'MySQL','MySQL is...','2018-01-01 12:10:11',1);
 INSERT INTO `topic` VALUES (2,'Oracle','Oracle is ...','2018-01-03 13:01:10',1);
 INSERT INTO `topic` VALUES (3,'SQL Server','SQL Server is ...','2018-01-20 11:01:10',2);
 INSERT INTO `topic` VALUES (4,'PostgreSQL','PostgreSQL is ...','2018-01-23 01:03:03',3);
 INSERT INTO `topic` VALUES (5,'MongoDB','MongoDB is ...','2018-01-30 12:31:03',1);
+```
+
+## 데이터 베이스 관계형 데이터 베이스 JOIN 
+`SELECT * FROM topic LEFT JOIN author ON topic.author_id=author.id; //topic 테이블과 join 테이블을 합친다. ON 조건 만족시키는 경우`
 
 
-********** 데이터 베이스 관계형 데이터 베이스 JOIN **********
-SELECT * FROM topic LEFT JOIN author ON topic.author_id=author.id;
-//topic 테이블과 join 테이블을 합친다. ON 조건 만족시키는 경우
-
-
-SELECT id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id; //오류
+`SELECT id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id; //오류`
 
 //->열에 id란 값이 2개 중복되므로 id->topic.id 로 열 구분을 해줘야함
 
-SELECT topic.id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id; //정상 출력
+`SELECT topic.id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id; //정상 출력`
 
 //topic.id AS topic_id, AS를 이용해 이름 변경하여 출력 가능
-SELECT topic.id AS topic_id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id; 
+`SELECT topic.id AS topic_id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id; `
 
 테이블을 분리한다는 것은, 모든 테이블이 식별자 값만 행에 포함하고 있다면 JOIN을 통해 얼마든지 관계를 맺을 수 있다.
 
