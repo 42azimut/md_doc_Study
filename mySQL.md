@@ -10,7 +10,7 @@ ___
 
 `USE sample_db`
 
-`SHOW TABLE;` OR `SHOW TABLE STATUS;
+`SHOW TABLE;` OR `SHOW TABLE STATUS`;
 
 `DESCRIBE ex_city_col;`  === `DESC ex_city_col;`
 
