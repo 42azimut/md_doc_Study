@@ -4,7 +4,7 @@
 ## 데이터 베이스 구분
 - 데이터베이스 서버 > 스키마(DB) > 테이블(TABLE) > FIELD == COLUMN > ROW > RECORD == DATA
 
-- 대소문자 구분 없이 가능! 관행상 SQL은 대문자 사용! 
+- 대소문자 구분 없이 가능! 관행상 SQL명령어는 대문자 사용! 
 ___
 
 `SHOW DATABASES;`
