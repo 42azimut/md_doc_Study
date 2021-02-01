@@ -74,5 +74,68 @@ ___
 ### Sub Query
 - 쿼리문 안에 쿼리문이 들어감
 - 서브쿼리의 결과가 둘이상이 되면 에러발생
+```
+SELECT *
+FROM city
+WHERE CountryCode * ( SELECT CountryCode FROM city WHERE Name = "Seoul" );
 
-/////// 20분부터 다시 시작!
+```
+___
+### ANY
+- 서브쿼리의 여러개 결고ㅛㅏ중 한가지만 만족해도 가능
+- SOME 은 Any 와 동일한 의미로 사용
+- =ANY 구문은 in과 동일한 의미
+```
+SELECT *
+FROM City
+WHERe Popultawion < ANY ( SELECT Population FROM city WHERE District = "New York" );
+```
+___
+### ALL
+- 서브쿼리의 여러결과 중 모두 만족시켜야 함! 
+SELCT *
+FROM city
+WHERE Population < All ( SELECT Polulation FROM city WHERE District = "Mew York" );
+```
+___
+### ORDER BY
+- 결과물에 영향이 없음
+- 결과 출력 순서
+- 디폴트 오름차순 == Ascending(ASC)
+- 내림차순은 Descending(DESC)
+- ORDER BY 구문 혼합사용 가능
+```
+SELECT *
+FROM city
+ORDER BY Popultation DESC;
+```
+
+```
+SELECT *
+FROM city
+ORDER BY CountryCode ASC, Population DESC;
+```
+___
+### DISTINCT
+- 중복된것 1개만 보여주는 출력
+- 테이블 크기가 크면 매우 효율적 (굳이 다 볼필요가 없을떄)
+```
+SELECT DISTINCT CountryCode
+FROM city;
+```
+___
+### LIMIT
+- 출력개수 제한
+- `LIMIT N` 구문
+```
+SELCT *
+FROM city
+ORDER BY Population DESC
+LIMNUIT 10;
+```
+___
+
+
+
+
+
