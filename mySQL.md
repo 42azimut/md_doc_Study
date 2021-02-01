@@ -110,7 +110,6 @@ SELECT *
 FROM city
 ORDER BY Popultation DESC;
 ```
-___
 ```
 SELECT *
 FROM city
