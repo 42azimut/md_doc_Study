@@ -93,6 +93,7 @@ WHERe Popultawion < ANY ( SELECT Population FROM city WHERE District = "New York
 ___
 ### ALL
 - 서브쿼리의 여러결과 중 모두 만족시켜야 함! 
+```
 SELCT *
 FROM city
 WHERE Population < All ( SELECT Polulation FROM city WHERE District = "Mew York" );
@@ -109,7 +110,7 @@ SELECT *
 FROM city
 ORDER BY Popultation DESC;
 ```
-
+___
 ```
 SELECT *
 FROM city
