@@ -1,42 +1,39 @@
-# md_doc_Study
+### md_doc_Study
 
-# 장고 가상환경 / 프로젝트생성 / 서버 실행
+### 장고 가상환경 / 프로젝트생성 / 서버 실행
 
-https://tutorial.djangogirls.org/ko/django_installation/
+`https://tutorial.djangogirls.org/ko/django_installation/`
 
 
 
-디렉토리 만들고 디렉토리 이동
+- 디렉토리 만들고 디렉토리 이동
+```
 $ mkdir XXXX
 $ cd XXXX
+```
 
-
+```
 가상환경 만듬. (myvenv 가상환경 이름..)
 $ python3 -m venv myvenv
-
-
 가상환경  실행
 $ source myvenv/bin/activate
-
-
+```
+```
 가상환경에 장고 버전 정해서 설치
 $ pip install Django~=2.1
-
 가상환경실행하고, 프로젝트 이름 생성 XXXX  .  (. … 마침표 찍어라!)
 $ django-admin startproject XXXX .
-
-
+```
+```
 장고 서버실행
 $ python3 manage.py runserver
-
 기본테이블 생성
 Python manage.py migrate
-
 Super User 
 python manage.py createsuperuser
+```
 
-
-
+```
 나의 첫 번째 장고 프로젝트!
 
 Note 이 장의 일부는 Geek Girls Carrots (http://django.carrots.pl/)의 튜토리얼을 기초로 작성되었습니다.
@@ -153,6 +150,6 @@ https://django-girls-<your cloud9 username>.c9users.io
 인터넷은 어떻게 작동될까요 장에서 웹 서버에 대해 배웠었어요.
 웹 서버가 실행되는 동안 추가 명령을 입력하려면 새 터미널 창을 열고 virtualenv를 활성화하세요. 웹 서버를 중지하려면 실행중인 창으로 다시 전환하고 CTRL + C - Control+C 키를 함께 누르세요. (윈도우에서는 Ctrl + Break를 눌러야 할 수도 있습니다)
 다음 단계로 넘어갈 준비가 되셨나요? 새로운 것을 또 배워볼까요!
-
+```
 
 
