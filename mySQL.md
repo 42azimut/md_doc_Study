@@ -4,7 +4,7 @@
 ## MYSQL workbench 맥OS 빅서 인스톨 에러 대처 
 - 워크벤치 최신 버전 설치시 에러(MySQL Workbench 8.0.23)
 - [스택오버플로우](https://stackoverflow.com/questions/65792436/mysql-workbench-quit-unexpectedly-on-mac-os-big-sur-11-1)
-- [워크벤치 다운로드 바로가기](https://downloads.mysql.com/archives/workbench/) 
+- [워크벤치  다운로드 바로가기](https://downloads.mysql.com/archives/workbench/) 
 
 
 ## 데이터 베이스 구분
