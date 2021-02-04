@@ -8,9 +8,9 @@ Terminal 로가서
 
 cd /usr/local/mysql/bin/ 
 
-./mysql -uroot -p.     (Mysql 사용    -유저(루트유저). -패스워드) 
+./mysql -uroot -p     (Mysql 사용    -유저(루트유저). -패스워드) 
 
-패스워드 입력.  
+패스워드 입력
 
 CF ) MAC OS 대문자 사용 : shift + caps lock 
 ___
