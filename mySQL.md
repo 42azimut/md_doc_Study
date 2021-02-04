@@ -1,6 +1,10 @@
 ## MYSQL 이수안컴퓨터연구소 유튜브
 [SQL Full Tutorial Course using MySQL Database](https://www.youtube.com/watch?v=vgIc4ctNFbc&t=1565s)
 
+## MYSQL workbench 맥OS 빅서 인스톨 에러 대처 
+- [스택오버플로우](https://stackoverflow.com/questions/65792436/mysql-workbench-quit-unexpectedly-on-mac-os-big-sur-11-1)
+- [워크벤치 다운로드 바로가기](https://downloads.mysql.com/archives/workbench/) 
+
 ## 데이터 베이스 구분
 - 데이터베이스 서버 > 스키마(DB) > 테이블(TABLE) > FIELD == COLUMN > ROW > RECORD == DATA
 
