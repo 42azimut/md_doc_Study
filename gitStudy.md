@@ -8,6 +8,7 @@
 - `git rm --cached 파일명`
 - `git rm --cached -r 폴더명`
 
+## .gitignore 작성 예시
 ```
 #확장자가 .class인 파일은 무시합니다.
 *.class
