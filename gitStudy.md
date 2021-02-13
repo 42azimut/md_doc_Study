@@ -8,6 +8,29 @@
 - `git rm --cached 파일명`
 - `git rm --cached -r 폴더명`
 
+```
+#확장자가 .class인 파일은 무시합니다.
+*.class
+
+#.class 파일들은 모두 무시되지만, HelloWorld.class만큼은 무시하지 않습니다.
+!HelloWorld.class
+
+#현재 디렉터리에 있는 /Test.java 파일은 무시되지만,
+#subDir/Test.java 같이 특정 디렉터리 하위에 있는 Test.java는 무시되지 않습니다.
+/Test.java
+
+#target/ 디렉터리에 있는 모든 파일 무시합니다.
+target/
+
+#src/ 하위의 .java 파일은 무시되지만 /src/main/ 하위의 .java 파일은 무시되지 않습니다.
+src/*.java
+
+#src/ 하위에 존재하는 모든 디렉터리의 .txt 파일을 무시합니다.
+src/**/*.txt
+
+출처: https://dololak.tistory.com/306 [코끼리를 냉장고에 넣는 방법]
+```
+
 ### 위에 작업 하고 나서 
 - `git commit`
 - `git push`  
@@ -30,5 +53,7 @@ ___
 ## branch
 - `git branch branch_name`
 - `git checkout branch_name`
+
+
 
 
