@@ -1,6 +1,6 @@
-## ![그림이름](링크)
+## Git Img
 
-![git Command Overview]()<https://github.com/42azimut/md_doc_Study/blob/main/IMG_5903.JPG">
+![git Command Overview](<https://github.com/42azimut/md_doc_Study/blob/main/IMG_5903.JPG">)
 
 # 원격 저장소 깃허브에 실수로 올린 파일 또는 폴더 삭제 하기
 
