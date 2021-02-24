@@ -1,8 +1,8 @@
 ## Git Overview
-![git Command Overview](https://github.com/42azimut/md_doc_Study/blob/main/IMG_5903.JPG)
+![git Command Overview](https://github.com/42azimut/md_doc_Study/blob/main/img/IMG_5903.JPG)
 
 
-<img src = "https://github.com/42azimut/md_doc_Study/blob/main/IMG_5903.JPG" width="800px">
+<img src = "https://github.com/42azimut/md_doc_Study/blob/main/img/IMG_5903.JPG" width="800px">
 
 # 원격 저장소 깃허브에 실수로 올린 파일 또는 폴더 삭제 하기
 
