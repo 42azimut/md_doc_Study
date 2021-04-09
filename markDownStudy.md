@@ -25,7 +25,13 @@
 ---
 
 ### Text attributes
-
+_italic_
+\*text
+```
+**bold**
+_italic_
+\*text
+```
 **
 This is the ** **bold** \*_ text and this is the _ _italic_ \* text and let do ~~ ~~strikethrough~~ ~~.
 
