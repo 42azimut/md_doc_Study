@@ -1,6 +1,4 @@
 ## Git Overview
-![git Command Overview](https://github.com/42azimut/md_doc_Study/blob/main/img/IMG_5903.JPG)
-
 
 <img src = "https://github.com/42azimut/md_doc_Study/blob/main/img/IMG_5903.JPG" width="800px">
 
