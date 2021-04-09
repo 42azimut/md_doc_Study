@@ -6,6 +6,6 @@
 
 ### 코딩의 바다로 항해~~
 
-<img src ="./md_doc_Study/img/aeac34d73c1f1cba82c73b23749d1280.JPG>
+<img src ="https://github.com/42azimut/md_doc_Study/blob/main/img/aeac34d73c1f1cba82c73b23749d1280.JPG width="400px">
 
 
