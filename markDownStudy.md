@@ -25,8 +25,9 @@
 ---
 
 ### Text attributes
-_italic_
-\*text
+- _italic_
+- *text
+- 
 ```
 **bold**
 _italic_
