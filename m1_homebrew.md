@@ -6,7 +6,8 @@ iMAC 24를 살까 했는데 어차피 확장모니터가 있어서 사용하는�
 참고 사이트 https://cpuu.postype.com/post/9183991
 
 공식 홈페이지 실리콘 설치 가이드
-$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+`$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 설치에는 Xcode 등 관련 추가 도구들이 설치 되는데, 완료하면 brew 경로를 등록하는 과정을 해야 한단다! <<< 이걸 몰랐다!
 $ echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/cpuu/.zprofile
@@ -15,3 +16,25 @@ $ eval $(/opt/homebrew/bin/brew shellenv)
 기존 인텔 맥은 /user/local 인데, 실리콘은 다른경로이므로 별도 추가 등록!
 
 ! 좋았어~ 오늘은 여기까지!!!
+___
+
+
+### M1 공장초기화 방법은 
+
+맥북을 끄신다음
+
+파워를 오래 누르면 옵션 선택이 나옵니다. 
+
+ 옵션으로 들어가서
+
+터미널에서 resetpassword를 입력한뒤
+
+맥에서 맥os삭제를 누르시면 됩니다.
+
+그후 빅서를 설치 하시면 되는데~
+
+문제는 맥os를 삭제 하니, 하드 이름도 언타이틀로 바뀝니다. ㅠㅠ (내 맥북 아직 신삥인데...)
+
+그래서 설치 도중에 다시 취소하고 지우기로 들어가서 지울때 맥킨토시 하드(처음 설치된 이름 Macintosh HD)로 바꾸어준다음 다시 빅서를 설치하니
+
+정말 공장에서 처음 나온 모습 그대로 작동이 됩니다.
